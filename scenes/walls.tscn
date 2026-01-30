@@ -12,6 +12,7 @@ size = Vector2(768, 200)
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=1850033269]
 script = ExtResource("3_8gyw1")
+max_hp = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=998261339]
 position = Vector2(96, 224)
