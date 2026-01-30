@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://ctgdse11wwrtw"]
 
-[ext_resource type="Script" uid="uid://bvax4yvj5oiw4" path="res://scripts/left_wall.gd" id="1_exnah"]
-[ext_resource type="Script" uid="uid://cf2as2y0bhpst" path="res://scripts/right_wall.gd" id="2_wcuyo"]
-[ext_resource type="Script" uid="uid://br6jsq4cfthdx" path="res://center_wall.gd" id="3_8gyw1"]
+[ext_resource type="Script" uid="uid://br6jsq4cfthdx" path="res://scripts/wall.gd" id="3_8gyw1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cd8gh"]
 size = Vector2(192, 448)
@@ -13,8 +11,7 @@ size = Vector2(768, 200)
 [node name="Walls" type="Node2D" unique_id=1065415692]
 
 [node name="LeftWall" type="StaticBody2D" parent="." unique_id=1850033269]
-script = ExtResource("1_exnah")
-max_hp = 150
+script = ExtResource("3_8gyw1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=998261339]
 position = Vector2(96, 224)
@@ -23,8 +20,8 @@ shape = SubResource("RectangleShape2D_cd8gh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="LeftWall" unique_id=1006295464]
 
 [node name="RightWall" type="StaticBody2D" parent="." unique_id=1244548742]
-script = ExtResource("2_wcuyo")
-max_hp = 150
+script = ExtResource("3_8gyw1")
+max_hp = 71
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=1152147573]
 position = Vector2(1056, 224)
@@ -34,6 +31,7 @@ shape = SubResource("RectangleShape2D_cd8gh")
 
 [node name="CenterWall" type="StaticBody2D" parent="." unique_id=919748832]
 script = ExtResource("3_8gyw1")
+max_hp = 121
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CenterWall" unique_id=1718061410]
 position = Vector2(576, 548)
