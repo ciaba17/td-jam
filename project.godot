@@ -15,8 +15,14 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="td-jam"
+run/main_scene="uid://cava58qiiypsm"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/icon.svg"
+
+[display]
+
+window/size/mode=3
+window/stretch/mode="viewport"
 
 [rendering]
 
