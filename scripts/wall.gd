@@ -1,4 +1,5 @@
-extends StaticBody2D
+class_name wall
+extends entity
 @export var max_hp: int
 var hp
 
