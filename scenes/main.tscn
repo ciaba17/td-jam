@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://cava58qiiypsm"]
 
 [ext_resource type="PackedScene" uid="uid://c3yj3vow8r10p" path="res://scenes/enemy_spawner.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://ctgdse11wwrtw" path="res://scenes/walls.tscn" id="2_0wfyh"]
 
 [node name="Main" type="Node2D" unique_id=510337153]
 
 [node name="enemy_spawner" parent="." unique_id=1112850181 instance=ExtResource("1_o5qli")]
-position = Vector2(555, 4)
+position = Vector2(554, -99)
+
+[node name="Walls" parent="." unique_id=1065415692 instance=ExtResource("2_0wfyh")]

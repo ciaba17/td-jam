@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://n2yjoxpxhtvh"]
+
+[ext_resource type="Script" uid="uid://bpt4orsjuewbi" path="res://scripts/units/base_unit.gd" id="1_kli75"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igbgy"]
+
+[node name="BaseUnit" type="CharacterBody2D" unique_id=2141382488]
+script = ExtResource("1_kli75")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1573063590]
+shape = SubResource("RectangleShape2D_igbgy")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=119840515]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1301777508]
