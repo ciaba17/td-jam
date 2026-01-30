@@ -1,5 +1,5 @@
 extends StaticBody2D
-@export var max_hp: int = 100
+@export var max_hp: int
 var hp
 
 # Called when the node enters the scene tree for the first time.
