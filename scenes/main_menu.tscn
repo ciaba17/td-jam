@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://qjwwdyq3rff1"]
+
+[ext_resource type="Script" uid="uid://8kffvmqmcivi" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+
+[node name="MainMenu" type="Control" unique_id=873901060]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l6cm7")
+
+[node name="button_manager" type="Control" parent="." unique_id=1796850591]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="button_manager" unique_id=1022514781]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 480.0
+offset_right = 1248.0
+offset_bottom = 576.0
+text = "START"
+
+[node name="Credits" type="Button" parent="button_manager" unique_id=482764518]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 608.0
+offset_right = 1248.0
+offset_bottom = 704.0
+text = "CREDITS"
+
+[node name="Quit" type="Button" parent="button_manager" unique_id=1074012472]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 736.0
+offset_right = 1248.0
+offset_bottom = 831.0
+text = "Quit
+"
+
+[connection signal="pressed" from="button_manager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="button_manager/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="button_manager/Quit" to="." method="_on_quit_pressed"]
