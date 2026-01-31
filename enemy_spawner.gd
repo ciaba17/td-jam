@@ -36,8 +36,5 @@ func get_random_point_inside_area() -> Vector2:
 		var x = randf_range(-shape.extents.x, shape.extents.x)
 		var y = randf_range(-shape.extents.y, shape.extents.y)
 		return global_position + Vector2(x, y)
-	elif shape is CircleShape2D:
-		var angle = randf() * TAU
-		var r = sqrt(randf()) * shape.radius
-		return global_position + Vector2(cos(angle), sin(angle)) * r
+		
 	return global_position

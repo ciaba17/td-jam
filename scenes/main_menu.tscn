@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://qjwwdyq3rff1"]
+[gd_scene format=3 uid="uid://qjwwdyq3rff1"]
 
 [ext_resource type="Script" uid="uid://ba0uo3lfyahlg" path="res://scripts/main_menu.gd" id="1_l6cm7"]
 
-[node name="main_menu" type="CanvasLayer"]
+[node name="main_menu" type="CanvasLayer" unique_id=408921281]
 script = ExtResource("1_l6cm7")
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1082399434]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -14,21 +14,21 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1132022365]
 layout_mode = 2
 alignment = 1
 
-[node name="Start" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Start" type="Button" parent="CenterContainer/VBoxContainer" unique_id=27537075]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 text = "Start"
 
-[node name="Credits" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Credits" type="Button" parent="CenterContainer/VBoxContainer" unique_id=583004706]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 text = "Credits"
 
-[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=946049740]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 text = "Quit"

@@ -6,7 +6,7 @@
 size = Vector2(192, 880)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0rbot"]
-size = Vector2(1533.5, 200)
+size = Vector2(1536, 200)
 
 [node name="Walls" type="Node2D" unique_id=1065415692]
 
@@ -34,7 +34,7 @@ script = ExtResource("3_8gyw1")
 max_hp = 121
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CenterWall" unique_id=1718061410]
-position = Vector2(958.75, 980)
+position = Vector2(960, 980)
 shape = SubResource("RectangleShape2D_0rbot")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CenterWall" unique_id=1091962682]
