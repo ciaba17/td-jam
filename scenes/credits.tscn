@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://ruoxt5wrfhj"]
 
+[ext_resource type="Script" uid="uid://ngo2lxi83mow" path="res://scripts/credits.gd" id="1_0bpdh"]
+
 [node name="Credits" type="Control" unique_id=291567705]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,28 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0bpdh")
+
+[node name="Control" type="Control" parent="." unique_id=2097478968]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GitHub" type="Button" parent="Control" unique_id=1177661052]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 448.0
+offset_right = 1280.0
+offset_bottom = 575.0
+text = "GitHub"
+
+[node name="Menu" type="Button" parent="Control" unique_id=183029636]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 640.0
+offset_right = 1280.0
+offset_bottom = 768.0
+text = "Main Menu"
+
+[connection signal="pressed" from="Control/GitHub" to="." method="_on_github_pressed"]
+[connection signal="pressed" from="Control/Menu" to="." method="_on_menu_pressed"]
