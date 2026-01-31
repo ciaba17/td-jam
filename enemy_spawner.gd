@@ -9,11 +9,13 @@ extends Node2D
 
 func _ready():
 	timer.wait_time = spawn_interval
+	timer.timeout.connect(_on_Timer_timeout)
 	timer.start()
 
 func _on_Timer_timeout():
 	for i in range(spawn_count):
 		spawn_enemy()
+		print("spawned")
 
 func spawn_enemy():
 	if enemy_scene == null:
@@ -29,7 +31,7 @@ func spawn_enemy():
 	get_tree().current_scene.add_child(enemy)
 
 func get_random_point_inside_area() -> Vector2:
-	var shape = $CollisionShape2D.shape
+	var shape = $Area2D/CollisionShape2D.shape
 	if shape is RectangleShape2D:
 		var x = randf_range(-shape.extents.x, shape.extents.x)
 		var y = randf_range(-shape.extents.y, shape.extents.y)

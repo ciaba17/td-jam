@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://br6jsq4cfthdx" path="res://scripts/wall.gd" id="3_8gyw1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cd8gh"]
-size = Vector2(192, 448)
+size = Vector2(192, 880)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0rbot"]
-size = Vector2(768, 200)
+size = Vector2(1533.5, 200)
 
 [node name="Walls" type="Node2D" unique_id=1065415692]
 
@@ -14,7 +14,7 @@ size = Vector2(768, 200)
 script = ExtResource("3_8gyw1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=998261339]
-position = Vector2(96, 224)
+position = Vector2(96, 440)
 shape = SubResource("RectangleShape2D_cd8gh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="LeftWall" unique_id=1006295464]
@@ -24,7 +24,7 @@ script = ExtResource("3_8gyw1")
 max_hp = 71
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=1152147573]
-position = Vector2(1056, 224)
+position = Vector2(1824, 440)
 shape = SubResource("RectangleShape2D_cd8gh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RightWall" unique_id=773204558]
@@ -34,7 +34,7 @@ script = ExtResource("3_8gyw1")
 max_hp = 121
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CenterWall" unique_id=1718061410]
-position = Vector2(576, 548)
+position = Vector2(958.75, 980)
 shape = SubResource("RectangleShape2D_0rbot")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CenterWall" unique_id=1091962682]

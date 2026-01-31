@@ -6,6 +6,6 @@
 [node name="Main" type="Node2D" unique_id=510337153]
 
 [node name="enemy_spawner" parent="." unique_id=1112850181 instance=ExtResource("1_o5qli")]
-position = Vector2(554, -99)
+position = Vector2(917, 85)
 
 [node name="Walls" parent="." unique_id=1065415692 instance=ExtResource("2_0wfyh")]

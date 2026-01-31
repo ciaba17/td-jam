@@ -1,15 +1,17 @@
 [gd_scene format=3 uid="uid://c3yj3vow8r10p"]
 
 [ext_resource type="Script" uid="uid://blrvvaaek8jx2" path="res://enemy_spawner.gd" id="1_ks1gq"]
+[ext_resource type="PackedScene" uid="uid://n2yjoxpxhtvh" path="res://scenes/units/baseUnit.tscn" id="2_devoi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ks1gq"]
-size = Vector2(118, 43)
+size = Vector2(407, 116.5)
 
 [node name="enemy_spawner" type="Node2D" unique_id=1112850181]
 script = ExtResource("1_ks1gq")
+enemy_scene = ExtResource("2_devoi")
+spawn_count = 4
 
 [node name="Timer" type="Timer" parent="." unique_id=1640924295]
-autostart = true
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1217233010]
 
