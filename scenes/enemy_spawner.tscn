@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://c3yj3vow8r10p"]
+[gd_scene load_steps=0 format=3 uid="uid://c3yj3vow8r10p"]
 
 [ext_resource type="Script" uid="uid://blrvvaaek8jx2" path="res://enemy_spawner.gd" id="1_ks1gq"]
-[ext_resource type="PackedScene" uid="uid://n2yjoxpxhtvh" path="res://scenes/units/baseUnit.tscn" id="2_devoi"]
+[ext_resource type="PackedScene" uid="uid://n2yjoxpxhtvh" path="res://scenes/units/base_unit.tscn" id="2_devoi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ks1gq"]
 size = Vector2(407, 116.5)

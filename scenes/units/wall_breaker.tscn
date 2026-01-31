@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b4xeh763lb6yl"]
+
+[node name="wall_breaker" type="CharacterBody2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]

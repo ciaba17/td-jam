@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+
+
 @export var level: int = 1
 
 @export var max_health: float = 100.0
@@ -10,7 +12,7 @@ var health: float = max_health
 @export var physical_def: float = 5.0
 @export var magic_def: float = 3.0
 
-@export var atk_speed: float = 1.0  # Attacchi al secondo
+@export var atk_speed: float = 1.0  # Attacks per second
 @export var attack_range: float = 40.0
 @export var speed: float = 50.0
 
